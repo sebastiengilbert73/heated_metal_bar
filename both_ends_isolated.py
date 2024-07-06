@@ -68,7 +68,7 @@ def main(
                 sum += np.exp(lambda_n[n] * t) * a[n] * math.cos(n * math.pi * x/length)
             u_x_t[t_ndx, x_ndx] = sum
         fig, ax = plt.subplots()
-        ax.plot(xs, u_x_t[t_ndx, :], label=f"t = {t:.2} s")
+        ax.plot(xs, u_x_t[t_ndx, :], label=f"t = {t:.3} s")
         ax.legend(loc='lower right')
         ax.grid(True)
         ax.set_xlabel('x (m)')
